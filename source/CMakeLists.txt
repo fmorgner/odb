@@ -1,6 +1,4 @@
 set(SOURCE
-   ${SOURCE}
-
    ${CMAKE_CURRENT_SOURCE_DIR}/atom.cpp
    ${CMAKE_CURRENT_SOURCE_DIR}/class.cpp
    ${CMAKE_CURRENT_SOURCE_DIR}/keyname.cpp
@@ -19,7 +17,7 @@ set(SOURCE
    ${CMAKE_CURRENT_SOURCE_DIR}/atom/datainteger.cpp
    ${CMAKE_CURRENT_SOURCE_DIR}/atom/datareal.cpp
    ${CMAKE_CURRENT_SOURCE_DIR}/atom/datastring.cpp
-
-   PARENT_SCOPE
 )
+
+add_library(odb SHARED ${SOURCE})
 
